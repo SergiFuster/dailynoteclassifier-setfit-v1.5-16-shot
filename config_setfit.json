@@ -1,0 +1,11 @@
+{
+  "normalize_embeddings": false,
+  "labels": [
+    "cita",
+    "comprar",
+    "trabajo",
+    "recordatorio",
+    "estudios",
+    "hogar"
+  ]
+}
