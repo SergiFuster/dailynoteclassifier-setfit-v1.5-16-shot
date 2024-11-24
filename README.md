@@ -1,37 +1,3 @@
----
-tags:
-- setfit
-- sentence-transformers
-- text-classification
-- generated_from_setfit_trainer
-widget:
-- text: Programar cita con el dermatólogo para revisión de lunares.
-- text: Reservar entradas para la obra de teatro antes del fin de semana.
-- text: Comprar una botella de agua para llevar al trabajo.
-- text: Limpiar el auto y aspirar los asientos el fin de semana.
-- text: No olvidar llevar el paraguas; hay pronóstico de lluvia.
-metrics:
-- accuracy
-pipeline_tag: text-classification
-library_name: setfit
-inference: true
-base_model: BAAI/bge-small-en-v1.5
-model-index:
-- name: SetFit with BAAI/bge-small-en-v1.5
-  results:
-  - task:
-      type: text-classification
-      name: Text Classification
-    dataset:
-      name: Unknown
-      type: unknown
-      split: test
-    metrics:
-    - type: accuracy
-      value: 0.6875
-      name: Accuracy
----
-
 # SetFit with BAAI/bge-small-en-v1.5
 
 This is a [SetFit](https://github.com/huggingface/setfit) model that can be used for Text Classification. This SetFit model uses [BAAI/bge-small-en-v1.5](https://huggingface.co/BAAI/bge-small-en-v1.5) as the Sentence Transformer embedding model. A [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) instance is used for classification.
